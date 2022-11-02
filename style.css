@@ -60,15 +60,6 @@
     color: white;
 } */
 
-.header-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.5)),
-    url(./assets/tecnologia.jpg) no-repeat;
-  height: 90vh;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-}
-
 body,
 .modal {
   width: 100%;
@@ -132,24 +123,32 @@ body,
   border-radius: 4px;
   cursor: pointer;
 }
-
+.d-block {
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
 body {
-  overflow:scroll;
-  flex-direction:column;
+  overflow: scroll;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display:flex;
+  display: flex;
 }
-footer{
-  overflow:hidden;
-  flex-direction:column;
+footer {
+  overflow: hidden;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-h1{
+h1 {
   font-size: large;
-  
+}
+
+img {
+  max-width: 100%;
 }
 /* #4a537c */

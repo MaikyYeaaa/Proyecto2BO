@@ -118,9 +118,10 @@ body,
   display: none;
 }
 .lbl-modal {
-  background: #fff;
-  padding: 10px 15px;
-  border-radius: 4px;
+  background: #7287c1;
+  margin-top: 10px;
+  padding: 9px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .d-block {

@@ -138,11 +138,11 @@ body {
   display: flex;
 }
 footer {
-  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 
 h1 {
@@ -153,3 +153,6 @@ img {
   max-width: 100%;
 }
 /* #4a537c */
+.horiz1 {
+  margin-left: 70vw;
+}

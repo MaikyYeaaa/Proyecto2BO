@@ -1,6 +1,6 @@
 @media (min-width: 576px) {
   .container-fluid {
-    width: 92vw;
+    width: 100vw;
   }
 }
 
@@ -13,6 +13,7 @@
 .navbar {
   background-color: #3d4c76;
   height: 10vh;
+  width: 100vw;
 }
 
 .navbar-brand img {
@@ -131,7 +132,7 @@ body,
   width: 100%;
 }
 body {
-  overflow: scroll;
+  overflow-x: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -151,8 +152,19 @@ h1 {
 
 img {
   max-width: 100%;
+  opacity: 80%;
+  transition: 1s;
 }
+img:hover {
+  opacity: 100%;
+}
+
 /* #4a537c */
 .horiz1 {
   margin-left: 70vw;
+}
+
+.hero {
+  width: 100vw;
+  margin-left: -10px;
 }

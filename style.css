@@ -249,7 +249,8 @@ body,
 }
 .lbl-modal {
   background: var(--color4);
-  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
   padding: 9px;
   border-radius: 5px;
   cursor: pointer;
@@ -263,7 +264,8 @@ body,
 }
 .lbl-modal2 {
   background: var(--color4);
-  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
   padding: 9px;
   border-radius: 5px;
   cursor: pointer;
@@ -275,7 +277,8 @@ body,
 }
 .lbl-modal3 {
   background: var(--color4);
-  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
   padding: 9px;
   border-radius: 5px;
   cursor: pointer;

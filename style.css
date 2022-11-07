@@ -255,6 +255,7 @@ body,
   cursor: pointer;
   transition: 0.5s;
   border: black;
+  border-width: 10px;
 }
 .lbl-modal:hover {
   transition: 0.5s;
@@ -315,6 +316,7 @@ footer {
   align-items: center;
   display: flex;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 h1 {

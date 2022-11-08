@@ -322,7 +322,8 @@ footer {
   align-items: center;
   display: flex;
   overflow: hidden;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color2);
 }
 
 h1 {
@@ -347,17 +348,33 @@ h1 {
   width: 100vw;
   margin-left: -10px;
 }
-.coso {
-  background-color: var(--color2);
-  width: 100vw;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+
 .nose {
   transition: 1s;
 }
 .nose:hover {
   width: 777px;
   transition: 1s;
+}
+.gmap_canvas {
+  transition: 0.5s;
+}
+.gmap_canvas:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.coso {
+  background-color: var(--color4);
+  width: 350px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 30%;
+  transition: 0.2s;
+}
+.coso:hover {
+  width: 400px;
+  border-radius: 0%;
+  transition: 0.2s;
 }

@@ -9,3 +9,6 @@ function ajustarfooter() {
 
 $(document).ready(ajustarfooter);
 $(window).on("resize", ajustarfooter);
+
+
+  

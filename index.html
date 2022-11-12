@@ -10,11 +10,6 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>UTU ITI</title>
-  </head>
-
-  <body>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -25,7 +20,11 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>UTU ITI</title>
+  </head>
 
+  <body>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="script.js"></script> -->
 
@@ -174,9 +173,9 @@
       <footer>
         <div class="horiz">
           <div class="coso">
-            <div>
+            <div class="coso-items-container">
               <input type="checkbox" id="btn-modal" />
-              <label for="btn-modal" class="lbl-modal"
+              <label for="btn-modal" class="lbl-modal" data-title="horarios"
                 ><img
                   src="assets/horarios.png"
                   alt=""
@@ -201,7 +200,7 @@
               </div>
 
               <input type="checkbox" id="btn-modal2" />
-              <label for="btn-modal2" class="lbl-modal2"
+              <label for="btn-modal2" class="lbl-modal" data-title="diario"
                 ><img
                   src="assets/diario.jpg"
                   alt=""
@@ -221,95 +220,107 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <input type="checkbox" id="btn-modal3" />
-            <label for="btn-modal3" class="lbl-modal3"
-              ><img
-                src="assets/inscripciones.jpg"
-                alt=""
-                width="100px"
-                height="100px"
-            /></label>
-            <div class="modal3">
-              <div class="contenedor3">
-                <header>¡A sufrir!</header>
-                <label for="btn-modal3">X</label>
-                <div class="contenido3">
-                  <h3>2BO</h3>
-                  <h3>2BP</h3>
-                </div>
-              </div>
-            </div>
 
-            <input type="checkbox" id="btn-modal" />
-            <label for="btn-modal" class="lbl-modal"
-              ><img
-                src="assets/calendario.jpg"
-                alt=""
-                width="100px"
-                height="100px"
-            /></label>
-            <div class="modal">
-              <div class="contenedor">
-                <header>¡horarios de examenes!</header>
-                <label for="btn-modal">X</label>
-                <div class="contenido">
-                  <h3>Matutino</h3>
-                  <h3>Vespertino</h3>
-                  <h3>Nocturno</h3>
+              <input type="checkbox" id="btn-modal3" />
+              <label
+                for="btn-modal3"
+                class="lbl-modal"
+                data-title="inscripciones"
+                ><img
+                  src="assets/inscripciones.jpg"
+                  alt=""
+                  width="100px"
+                  height="100px"
+              /></label>
+              <div class="modal3">
+                <div class="contenedor3">
+                  <header>¡A sufrir!</header>
+                  <label for="btn-modal3">X</label>
+                  <div class="contenido3">
+                    <h3>2BO</h3>
+                    <h3>2BP</h3>
+                  </div>
                 </div>
               </div>
-              &nbsp;&nbsp;&nbsp;&nbsp;
+
+              <input type="checkbox" id="btn-modal" />
+              <label
+                for="btn-modal"
+                class="lbl-modal"
+                data-title="calendario"
+                data-price="300"
+                ><img
+                  src="assets/calendario.jpg"
+                  alt=""
+                  width="100px"
+                  height="100px"
+              /></label>
+              <div class="modal">
+                <div class="contenedor">
+                  <header>¡horarios de examenes!</header>
+                  <label for="btn-modal">X</label>
+                  <div class="contenido">
+                    <h3>Matutino</h3>
+                    <h3>Vespertino</h3>
+                    <h3>Nocturno</h3>
+                  </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+            </div>
+            <div class="titulo-cambiante-container">
+              <h2 class="titulo-cambiante">PRUEBA</h2>
             </div>
           </div>
         </div>
-      <div class="abajo">
-        <div class="horiz1">
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="250"
-                height="250"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Instituto%20Tecnologico%20de%20Inf%C3%B3rmatica&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe
-              ><a href="https://123movies-to.org">123 movies</a><br /><style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 236px;
-                  width: 236px;
-                }</style
-              ><a href="https://www.embedgooglemap.net"
-                >google map code for website</a
-              ><style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 236px;
-                  width: 236px;
-                }
-              </style>
+        <div class="abajo">
+          <div class="horiz1">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="250"
+                  height="250"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Instituto%20Tecnologico%20de%20Inf%C3%B3rmatica&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org">123 movies</a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 236px;
+                    width: 236px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >google map code for website</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 236px;
+                    width: 236px;
+                  }
+                </style>
+              </div>
+            </div>
+            <div style="position: relative">
+              <div>©2022 Instituto Tecnológico de Informática</div>
+              <div>Durazno 1328 entre Ejido y Aquiles R. Lanza</div>
+              <div>Montevideo, Uruguay</div>
+              <div>Teléfono: 29012257 - Fax: 29027144 Interno 13</div>
+              <div>
+                Diseño del alumno/s: Franco Moreira, Mateo Etchegoimberry del
+                grupo 2°BO
+              </div>
+                      
+            </div>
           </div>
         </div>
-          <div style="position: relative;">
-            <div>©2022 Instituto Tecnológico de Informática</div>
-            <div>Durazno 1328 entre Ejido y Aquiles R. Lanza</div>
-            <div>Montevideo, Uruguay</div>
-            <div>Teléfono: 29012257 - Fax:  29027144 Interno 13</div>
-            <div>
-            Diseño del alumno/s: Franco Moreira, Mateo Etchegoimberry del grupo
-            2°BO
-          </div>
-                  
-        </div>
-        </div>
-      </div>  
       </footer>
     </header>
+    <script src="scripts-mateo.js"></script>
   </body>
 </html>

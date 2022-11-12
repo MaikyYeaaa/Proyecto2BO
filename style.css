@@ -21,7 +21,7 @@
 }
 
 .navbar {
-  background-color: var(--color1);
+  background-color: var(--color2);
   height: 10vh;
   width: 100vw;
 }
@@ -259,36 +259,8 @@ body,
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
-  border: black;
-  border-width: 10px;
 }
 .lbl-modal:hover {
-  transition: 0.5s; 
-  transform: scale(1.1);
-}
-.lbl-modal2 {
-  background: var(--color4);
-  margin: 10px;
-  margin-bottom: 10px;
-  padding: 9px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.lbl-modal2:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-.lbl-modal3 {
-  background: var(--color4);
-  margin: 10px;
-  margin-bottom: 10px;
-  padding: 9px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.lbl-modal3:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
@@ -343,7 +315,6 @@ h1 {
 
 /* #4a537c */
 
-
 .hero {
   width: 100vw;
   margin-left: -10px;
@@ -363,18 +334,19 @@ h1 {
   height: 300px;
   padding: 10px;
   margin: 10px;
-  text-align: left; 
+  text-align: left;
   padding-left: 25px;
   border-radius: 40px;
   transition: 0.2s;
   z-index: 1;
+  display: flex;
 }
 .coso:hover {
   width: 80vw;
-  transition: 0.2s;
+  transition: 0.5s;
   margin-right: 10px;
 }
-.abajo{
+.abajo {
   background-color: var(--color4);
   padding: 10px;
   padding-left: 10%;
@@ -382,8 +354,24 @@ h1 {
   width: 100vw;
   align-content: center;
 }
-.horiz{
+
+.coso-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
 }
-.carousel-inner{
-  margin-block-start: 200vh;
+
+.titulo-cambiante {
+  display: none;
+  text-transform: capitalize;
+}
+.titulo-cambiante.visible {
+  display: block;
+}
+
+.titulo-cambiante-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 300px);
 }

@@ -29,7 +29,7 @@
 
 .navbar-brand img {
   height: 40px;
-  margin-left: 10px;
+  margin-left: 10px
   transition: 0.5s;
   border-radius: 50%;
 }
@@ -247,7 +247,11 @@ body,
 #btn-modal {
   display: none;
 }
-
+.modal,
+.modal2,
+.modal3 {
+  z-index: 1;
+}
 #btn-modal2 {
   display: none;
 }

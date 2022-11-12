@@ -5,6 +5,7 @@
   --color3: #f8f32b;
   --color4: #ffffff;
   --color5: #000000;
+  --sombra: #000000;
 }
 
 @media (min-width: 576px) {
@@ -30,10 +31,12 @@
   height: 40px;
   margin-left: 10px;
   transition: 0.5s;
+  border-radius: 50%;
 }
 .navbar-brand img:hover {
   transform: scale(1.2);
   transition: 0.5s;
+  border-radius: 20%;
 }
 
 .navbar-toggler {
@@ -260,27 +263,23 @@ body,
   cursor: pointer;
   transition: 0.5s;
 }
+.lbl-modal.blur {
+  filter: blur(2px);
+}
 .lbl-modal:hover {
   transition: 0.5s;
   transform: scale(1.1);
+  filter: none;
 }
 .d-block {
-  height: 90vh;
   background-size: cover;
   background-position: center center;
   width: 100%;
+  height: 3000px;
 }
-.d-block2 {
-  height: 90vh;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-}
-.d-block3 {
-  height: 90vh;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
+.d-block:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 body {
   overflow-x: hidden;
@@ -296,21 +295,12 @@ footer {
   display: flex;
   overflow: hidden;
   padding-bottom: 10px;
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 
 h1 {
   font-size: large;
   padding-top: 5px;
-}
-
-.d-block {
-  width: 100vw;
-  height: 60vh;
-  transition: 1s;
-}
-.d-block:hover {
-  transform: scale(1.1);
 }
 
 /* #4a537c */
@@ -332,19 +322,18 @@ h1 {
   background-color: var(--color25);
   width: 350px;
   height: 300px;
-  padding: 10px;
   margin: 10px;
-  text-align: left;
-  padding-left: 25px;
+  margin-left: 10px;
   border-radius: 40px;
   transition: 0.2s;
-  z-index: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .coso:hover {
-  width: 80vw;
+  width: 1000px;
   transition: 0.5s;
-  margin-right: 10px;
 }
 .abajo {
   background-color: var(--color4);
@@ -356,9 +345,9 @@ h1 {
 }
 
 .coso-items-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
   width: 300px;
+  margin-left: 15px;
 }
 
 .titulo-cambiante {
@@ -374,4 +363,40 @@ h1 {
   align-items: center;
   justify-content: center;
   width: calc(100% - 300px);
+}
+h6 {
+  font-size: 50px;
+  font-style: italic;
+}
+.horiz {
+  padding: 1px;
+  padding-left: 10px;
+  background-color: var(--color1);
+}
+.espacio {
+  height: 150px;
+  background-color: var(--color2);
+  filter: drop-shadow(0px 0px 20px var(--sombra));
+}
+h2 {
+  color: var(--color4);
+}
+#estudiantes {
+  text-align: center;
+  padding: 10px;
+}
+.card-nojodas {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+}
+.card-img-top:hover {
+  transition: 1s;
+  filter: invert(100%);
+}
+#biblioteca {
+  text-align: center;
+  padding: 10px;
 }

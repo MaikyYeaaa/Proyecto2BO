@@ -5,7 +5,7 @@
   --color3: #f8f32b;
   --color4: #ffffff;
   --color5: #000000;
-  --sombra: #000000;
+  --sombra: #ff0000;
 }
 
 @media (min-width: 576px) {
@@ -199,7 +199,7 @@ body,
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   margin-top: 2000px;
 }
 .d-block:hover {
@@ -293,6 +293,7 @@ h1 {
 h6 {
   font-size: 50px;
   font-style: italic;
+  transform: rotate(10deg);
 }
 .horiz {
   padding: 1px;
@@ -325,4 +326,9 @@ h2 {
 #biblioteca {
   text-align: center;
   padding: 10px;
+}
+.aaa,
+.mapouter,
+.gmap_canvas {
+  display: flex;
 }

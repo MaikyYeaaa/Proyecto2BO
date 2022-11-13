@@ -28,5 +28,4 @@ window.onscroll = function () {
   numero = numero + 1;
   hex = numero.toString(16);
   r.style.setProperty("--sombra", "#" + hex);
-  console.log(hex);
 };
